@@ -6,12 +6,12 @@ import random
 import qrcode
 import getpass
 import socket
-from PyQt5.QtWidgets import (
+from PySide6.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QHBoxLayout, QLabel,
     QLineEdit, QPushButton, QRadioButton, QFrame, QGraphicsDropShadowEffect
 )
-from PyQt5.QtGui import QPixmap, QColor, QImage
-from PyQt5.QtCore import Qt
+from PySide6.QtGui import QPixmap, QColor, QImage
+from PySide6.QtCore import Qt
 
 # Impor yang diperlukan untuk menggambar di gambar
 from PIL import Image, ImageDraw, ImageFont
@@ -374,7 +374,7 @@ def main():
     app = QApplication(sys.argv)
     manager = PasswordCard()
     manager.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())
 
 
 if __name__ == '__main__':
